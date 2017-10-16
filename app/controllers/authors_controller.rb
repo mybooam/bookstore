@@ -5,6 +5,13 @@ class AuthorsController < ApplicationController
   end
 
   def create
+    @author = Author.new(author_params)
+    if @author.save
+      flash[:notice] = "Author created"
+      redirect_to authors_path
+    else
+      render 'new'
+    end
   end
 
   def update
@@ -26,4 +33,5 @@ class AuthorsController < ApplicationController
   def author_params
     params.require(:author).permit(:first_name, :last_name)
   end
+  
 end
