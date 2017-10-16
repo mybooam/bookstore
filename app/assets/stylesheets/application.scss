@@ -22,7 +22,15 @@ body{
 	color: #666;
 	line-height: 1.5em;
 }
-
+header{
+	background: #333;
+	color: #fff;
+	height: 80px;
+	margin-bottom: 20px;
+	text-align: center;
+	padding-botom: 20px;
+	
+}
 footer{
 	background: #333;
 	color: #fff;
@@ -33,7 +41,6 @@ footer{
 }
 #books-index img{
 	width: 100%;
-	
 	padding: 3px;
 	border: 1px #ccc solid;
 }
@@ -47,6 +54,7 @@ footer{
 	display: block;
 	margin-top: 15px;
 }
+
 #books-show h2{
 	background: #f4f4f4;
 	padding: 10px; 

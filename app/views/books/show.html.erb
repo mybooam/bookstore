@@ -1,5 +1,6 @@
 <div id="books-show">
 	<h2><%= @book.title %></h2>
+	
 	<div class="books-show-left">
 	<%= image_tag (@book.coverpath) %>
 	</div>
@@ -15,7 +16,8 @@
 			<li><strong>Pages: </strong><%= @book.pages %></li>
 		</ul>
 		<%= link_to "Buy for " + @book.price , @book.buy , class: 'btn btn-success', target: '_blank' %>
-	</div>
+	
+</div>
 	<div class="clearfix"></div>
 	<h4>Excerpt</h4>
 	<p>
