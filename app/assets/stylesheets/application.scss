@@ -31,3 +31,37 @@ footer{
 	text-align: center;
 	padding-top: 20px;
 }
+#books-index img{
+	width: 100%;
+	
+	padding: 3px;
+	border: 1px #ccc solid;
+}
+#books-index{
+	texta-align: center;
+}
+#books-index h3{
+	height: 50px;
+}
+#books-index .btn{
+	display: block;
+	margin-top: 15px;
+}
+#books-show h2{
+	background: #f4f4f4;
+	ppadding: 10px; 
+
+}
+.books-show-left{
+	float: left;
+	width: 40%;
+}
+.books-show-right{
+	float: left;
+	width: 60%;
+	margin-top: 10px;
+
+}
+#books-show .btn{
+	margin: 20px 0 0 70px;
+}

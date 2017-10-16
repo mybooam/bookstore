@@ -1,5 +1,7 @@
 class AuthorsController < ApplicationController
   def new
+    @page_title = 'Add new Author'
+    @author = Author.new
   end
 
   def create
@@ -18,5 +20,10 @@ class AuthorsController < ApplicationController
   end
 
   def show
+  end
+
+  private
+  def author_params
+    params.require(:author).permit(:first_name, :last_name)
   end
 end
