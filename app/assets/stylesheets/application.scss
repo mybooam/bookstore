@@ -31,6 +31,9 @@ header{
 	padding-botom: 20px;
 	
 }
+header h1{
+	line-height: 1.7em;
+}
 footer{
 	background: #333;
 	color: #fff;
@@ -39,11 +42,7 @@ footer{
 	text-align: center;
 	padding-top: 20px;
 }
-#books-index img{
-	width: 100%;
-	padding: 3px;
-	border: 1px #ccc solid;
-}
+
 #books-index{
 	text-align: center;
 }
@@ -75,4 +74,7 @@ footer{
 }
 .book-info{
 	padding-left: 10px;
+}
+.card-group{
+	display: flex;
 }

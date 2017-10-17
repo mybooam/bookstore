@@ -1,15 +1,27 @@
-<div id="books-index">
-	<% @books.each_slice(4) do |book| %>
-	<div class="row">
-		<% book.each do |book| %>
-		<div class="col-md-3 col-sm-3">
-			<h3><%= book.title %></h3>
-			
-			<%= image_tag (book.coverpath) %>
-		
-			<%= link_to 'Read More', book_path(book), class: "btn btn-primary" %>
-		</div>
-		<% end %>
-	</div>
-	<% end %>
+
+<% @books.each_slice(4) do |book| %>
+
+
+  
+
+<div class="card-deck">
+	
+  <% book.each do |book| %>
+
+  <div class="card">
+    
+    <%= image_tag (book.coverpath), class: 'card-img-top' %>
+    <div class="card-body">
+      <h5 class="card-title"><%= book.title %></h5>
+      <p class="card-text">This is a wider card with supporting text.</p>
+    </div>
+    <%= link_to "Read more", book_path(book), class: "btn btn-info" %>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  
+  <% end %>
 </div>
+
+<% end %>
