@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= @page_title ? @page_title : 'Welcome' %> | Bookstore</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= csrf_meta_tags %>
+<head>
+  <title><%= @page_title ? @page_title : 'Welcome' %> | Bookstore</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-  	
-  	
-    <section>
-      <%= render 'layouts/navbar' %>
+<body>
+ 
+ 
+ 
+    <%= render 'layouts/navbar' %>
     <%= render 'layouts/header' %>
-   
+    
     <div class="container">
       
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9">
           
           <!--Alerts & Messages -->
           <% if flash[:notice] %>
@@ -30,15 +30,17 @@
           <div class="alert alert-danger"><%= flash[:alert] %></div>
           <% end %>
 
-    <%= yield %>
-  </div>
-  <div class="col-md-4">
-    <%= render 'layouts/sidebar' %>
-  </div>
-  </div>
-     </div>
-   </section>
-   <%= render 'layouts/footer' %>
-  </body>
-</html>
+          <%= yield %>
+
+        </div>
+
+        <div class="col-md-3">
+          <%= render 'layouts/sidebar' %>
+        </div>
+      </div>
+    </div>
   
+
+  <%= render 'layouts/footer' %>
+</body>
+</html>

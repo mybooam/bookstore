@@ -1,10 +1,10 @@
 <div id="books-show">
 	<h2><%= @book.title %></h2>
 	
-	<div class="books-show-left">
+	<div class="float-left">
 	<%= image_tag (@book.coverpath) %>
 	</div>
-	<div class="books-show-right">
+	<div class="float-left book-info">
 		<h3>Book Info</h3>
 		<ul>
 			<li><strong>Category: </strong><%= @book.category.name %></li>
@@ -19,8 +19,11 @@
 	
 </div>
 	<div class="clearfix"></div>
+	<br />
 	<h4>Excerpt</h4>
 	<p>
-		@book.excerpt
+		<%= @book.excerpt %>
 	</p>
+	<h5>Admin Functions</h5>
+	<%= link_to "Edit", edit_book_path(@book.id) %> | <%= link_to "Delete", book_path(@book), method: :delete, data: {confirm: 'Are you sure?'} %>
 </div>

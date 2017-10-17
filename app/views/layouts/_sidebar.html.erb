@@ -13,6 +13,7 @@
 
 <% end %>
 <% if params[:controller] == 'books' && params[:action] == 'index' || params[:action] == 'show' %>
+
 <div class="list-group">
 	<% @categories.each do |category| %>
 	<%= link_to category.name, category_path(category.id), class: "list-group-item" %>
@@ -20,4 +21,5 @@
 	
 
 </div>
+
 <% end %>
