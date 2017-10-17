@@ -16,7 +16,7 @@
 @import "bootstrap";
 
 body{
-	padding_top: 3em;
+	
 	font_family: 'Arial', sans-serif;
 	font-size: 1rem;
 	color: #666;
@@ -43,38 +43,19 @@ footer{
 	padding-top: 20px;
 }
 
-#books-index{
-	text-align: center;
-}
-#books-index h3{
-	height: 50px;
-}
-#books-index .btn{
-	display: block;
-	margin-top: 15px;
-}
 
 #books-show h2{
 	background: #f4f4f4;
 	padding: 10px; 
 
 }
-.books-show-left{
-	float: left;
-	width: 40%;
-}
-.books-show-right{
-	float: left;
-	width: 60%;
-	margin-top: 10px;
 
-}
 #books-show .btn{
 	margin: 20px 0 0 70px;
 }
+
+
 .book-info{
 	padding-left: 10px;
 }
-.card-group{
-	display: flex;
-}
+
